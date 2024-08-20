@@ -1277,6 +1277,7 @@ footer .column2{
     /* Your phone-specific styles go here */
     body{
         width: 100%;
+        border: 2px solid red;
     }
 
     .header-container{
@@ -1285,27 +1286,20 @@ footer .column2{
         width: 100%;
         gap: 10px;
     }
-
    .logo{
-    display: flex;
-    flex-direction: column;
+       flex-direction: column;
+       display: flex;
    }
-
     .search-bar{
-        /* border: 2px solid green; */
         width: 100%;
         margin: 1rem auto;
     }
-
     .search-bar input{
         height: 40px;
-        
-        /* padding: 10px; */
     }
     .search-bar input::placeholder{
         font-size: 20px;
     }
-
     .header-btns{
         display: none;
     }
