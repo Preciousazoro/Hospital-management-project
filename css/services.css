@@ -380,26 +380,11 @@ nav ul li a:hover {
 }
 
 .sec5-details{
-    /* margin: 3rem 0; */
     padding: 2rem;
-    /* border: 2px solid blue; */
     width: 500px;
 }
 
-.sec5-details h1{
-    font-size: 30px;
-    color: #107AB6;
-}
-
-.sec5-details p{
-    font-size: 14px;
-    margin: 1rem 0;
-    color: #656C77;
-    line-height: 20px;
-}
-
 #section6{
-
     background-color: #E8E8E8;
     /* border: 2px solid yellow  ; */
 }
@@ -421,14 +406,7 @@ nav ul li a:hover {
     display: flex;
     gap: 55px;
     margin-bottom: 2rem;
-
 }
-
-/* #section6 .section-title{
-    color: #0D5F8E;
-    font-weight: 700;
-    font-size: 20px;
-} */
 
 .sect6-title span{
     color: #107AB6;
@@ -440,18 +418,14 @@ nav ul li a:hover {
     line-height: 30px;
     font-size: 20px;
     color: #656C77;
-    
 }
 
 .section6-details-container{
-    /* border: 2px solid red; */
     width: 350px;
 }
 
 .sect6-title{
-    /* border: 2px solid purple; */
     margin: 2rem 0;
-
 }
 
 .sect6-param{
@@ -460,13 +434,11 @@ nav ul li a:hover {
 }
 
 #section7{
-    /* border: 2px solid red; */
     width: 90%;
     margin: 4rem auto;
 }
 
 #section7 .sec7-container{
-    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,14 +458,20 @@ nav ul li a:hover {
 
 .sec7-param button{
     /* background-color: #F4F5F6; */
-    border: none;
     color: #107AB6;
+    background-color: transparent;    
+    width: 130px;
+    height: 30px;
     border-radius: 80px;
-    width: 190px;
-    height: 40px;
-    background-color: #B6D9EE;
-    align-content: center;
-    cursor: pointer;   
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center; 
+    font-size: 14px;
+}
+
+.sec7-param button span{
+    margin-left: 5px;
 }
 
 .sec7-param P{
@@ -525,7 +503,6 @@ footer{
 }
 
 footer .column1{
-    /* border: 3px solid black; */
     width: 600px;
 }
 
@@ -680,7 +657,6 @@ footer .column2{
 
 
 
-
 /* For desktop screens */
 @media only screen and (min-width: 1024px) {
     /* Your desktop-specific styles go here */
@@ -691,7 +667,7 @@ footer .column2{
 }
 
 /* For tablet screens */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
     /* Your tablet-specific styles go here */
     body {
 
@@ -700,10 +676,287 @@ footer .column2{
 }
 
 /* For phone screens */
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     /* Your phone-specific styles go here */
-    body {
+    body{
+        width: 100%;
+        border: 2px solid green;
+    }
 
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+   .logo{
+    display: flex;
+    flex-direction: column;
+   }
+
+    .search-bar{
+        /* border: 2px solid green; */
+        justify-content: center;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .search-bar input{
+        height: 40px;
+        /* padding: 10px; */
+    }
+    .search-bar input::placeholder{
+        font-size: 20px;
+    }
+
+    .header-btns{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .section1{
+        width: 100%;
+    }
+    .sec1-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    
+    .sec1-details{
+        flex-direction: column;
+    }
+    .col h3{
+        font-size: 23px;
+    }
+    .col{
+        width: 100%;
+    }
+    .col p{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    #section2{
+        width: 100%;
+    }
+    .sec2-container{
+        flex-direction: column;
+    }
+    .sec5-details .sec2-btns{
+        width: 75%;
+        padding-left: 0.5rem;
+    }
+    #sec2-btn1{
+        width: 160px;
+        font-size: 18px;
+    }
+    #sec2-btn2{
+        width: 160px;
+        font-size: 18px;
+    }
+    .sec2-col1{
+        width: 100%;
+        padding: 1rem;
+    }
+    .sec2-col1 p{
+        width: 100%;
+    }
+    .col1-row1 h1{
+        font-size: 33px;
+    }
+    
+    .col1-row1 p{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .col1-row2 span{
+        font-size: 25px;
+    }
+    
+    .col1-row2 p{
+        font-size: 22px;
+        line-height: 25px;
 
     }
+    .col1-list li{
+        font-size: 20px;
+        font-weight: 700;
+    } 
+    .sec2-col1 .sec2-btns{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sec2-col1 #sec2-btn1{
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .sec2-col1 #sec2-btn2{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .sec2-col2{
+        display: block;
+    }
+    .sec2-col2 img{
+        padding: 1rem;
+        width: 100%;;
+        height: 500px;
+        border-radius: 20px;
+    }
+    .sec3-container h1{
+        font-size: 30px;
+    }
+    
+    .sec3-container p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .sec4-img{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .sec4-img img{
+        width: 100%;
+        margin:0 auto;
+    }
+    #section4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sec4-container h2{
+        font-size: 30px;
+    }
+    .sec4-container p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .sec4-container li{
+        line-height: 28px;
+        font-size: 20px;
+    }
+    .sec4-container span{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    #sec4-btn1{
+        font-size: 20px;
+    }
+    #sec4-btn2{
+        font-size: 19px;
+    }
+    #section5{
+        /* border: 2px solid green ; */
+    }
+    .sec5-container{
+        width: 100%;
+        height: 300px;
+    }
+    .sec5-details{
+        padding: 1rem;
+    }
+    .sec5-details p{
+        color: #4c5159;
+        width: 70%;
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    .sec6-container{
+        width: 90%;
+        overflow: hidden;
+    }
+    .section6-details{
+        flex-direction: column;
+    }
+    .sect6-param{
+        font-size: 21px;
+    }
+    .sect6-title p{
+        font-size: 22px;
+    }
+    #section7{
+        width: 90%;
+    }
+    .sec7-container{
+        flex-direction: column;
+    }
+    .sec7-img img{
+        width: 100%;
+    }
+    .sec7-item h1{
+        font-size: 22px;
+    }
+    .sec7-param P{
+        font-size: 20px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    footer .column1{
+        width: 100%;
+    }
+    .ft-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .column1 p{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    footer .icons{
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .column2 .row ul{
+        flex-direction: column;
+    }
+    .column2 .row li{
+        list-style: circle;
+        list-style-position: inside;
+        margin: 0;
+        width: 80%;
+        font-size: 18px;
+    }
+    .row1{
+        margin-bottom: 2rem;
+    }
+    .row3 p{
+        font-size: 17px;
+    }
+    .row3-container{
+        flex-direction: column;
+    }
+    .row3-btn{
+        width: 90%;
+        margin:2rem auto;
+
+    }
+    .row3-btn input{
+        width: 150px;
+    }
+    .row3-btn input::placeholder{
+        font-size: 16px;
+    }
+    .row3-btn button{
+        font-size: 17px;
+    }
+    .help{
+        display: none;
+    }
+
 }
