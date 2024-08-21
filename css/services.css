@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid green; */
 }
 
 body{
@@ -680,36 +681,30 @@ footer .column2{
     /* Your phone-specific styles go here */
     body{
         width: 100%;
-        border: 2px solid green;
     }
 
     .header-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin: 0.5rem auto;
         gap: 10px;
     }
-
    .logo{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
    }
-
     .search-bar{
-        /* border: 2px solid green; */
-        justify-content: center;
         width: 100%;
         margin: 1rem auto;
     }
-
     .search-bar input{
         height: 40px;
-        /* padding: 10px; */
+        width: 100%;
     }
     .search-bar input::placeholder{
         font-size: 20px;
     }
-
     .header-btns{
         display: none;
     }
@@ -727,7 +722,6 @@ footer .column2{
     .title h1{
         font-size: 30px;
     }
-    
     .sec1-details{
         flex-direction: column;
     }
@@ -748,8 +742,9 @@ footer .column2{
         flex-direction: column;
     }
     .sec5-details .sec2-btns{
-        width: 75%;
+        width: 100%;
         padding-left: 0.5rem;
+        /* margin-bottom: rem; */
     }
     #sec2-btn1{
         width: 160px;
@@ -768,8 +763,7 @@ footer .column2{
     }
     .col1-row1 h1{
         font-size: 33px;
-    }
-    
+    }  
     .col1-row1 p{
         font-size: 22px;
         line-height: 25px;
@@ -777,7 +771,6 @@ footer .column2{
     .col1-row2 span{
         font-size: 25px;
     }
-    
     .col1-row2 p{
         font-size: 22px;
         line-height: 25px;
@@ -794,19 +787,16 @@ footer .column2{
         align-items: center;
         justify-content: center;
     }
-    
     .sec2-col1 #sec2-btn1{
         width: 180px;
         height: 50px;
         font-size: 18px;
-    }
-    
+    } 
     .sec2-col1 #sec2-btn2{
         width: 200px;
         height: 50px;
         font-size: 18px;
     }
-    
     .sec2-col2{
         display: block;
     }
@@ -818,8 +808,7 @@ footer .column2{
     }
     .sec3-container h1{
         font-size: 30px;
-    }
-    
+    } 
     .sec3-container p{
         font-size: 20px;
         line-height: 28px;
@@ -868,6 +857,7 @@ footer .column2{
     }
     .sec5-details{
         padding: 1rem;
+        width: 100%;
     }
     .sec5-details p{
         color: #4c5159;
@@ -935,6 +925,9 @@ footer .column2{
     .row1{
         margin-bottom: 2rem;
     }
+    .row3{
+        width: 100%;
+    }
     .row3 p{
         font-size: 17px;
     }
@@ -944,7 +937,6 @@ footer .column2{
     .row3-btn{
         width: 90%;
         margin:2rem auto;
-
     }
     .row3-btn input{
         width: 150px;

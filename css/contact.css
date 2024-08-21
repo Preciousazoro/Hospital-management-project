@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid green; */
 }
 
 body{
@@ -683,26 +684,27 @@ footer .column2{
         width: 100%;
         /* border: 2px solid green; */
     }
-
     .header-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        margin: 0.5rem auto;
+        width: 90%;
         gap: 10px;
     }
-
    .logo{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
    }
-
     .search-bar{
-        justify-content: center;
         width: 100%;
         margin: 1rem auto;
     }
     .search-bar input{
-        border-radius: 15px;
+        height: 40px;
+        width: 100%;
+    }
+    .search-bar input::placeholder{
+        font-size: 20px;
     }
     .navbar{
         display: none;

@@ -336,8 +336,6 @@ main {
     justify-content: center;
     position: absolute;
     top: 6px;
-    /* border: 2px solid green; */
-
 }
 
 .content{
@@ -402,7 +400,7 @@ main {
 
 .section2-divs{
     /* border: 2px solid black; */
-    width: 91%;
+    width: 100%;
     margin: 2rem auto;
     display: flex;
     justify-content: space-between;
@@ -832,12 +830,8 @@ main {
     transition: opacity 0.5s ease-in-out;
 }
 
-
-
-
-
 #section7{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 90%;
     margin: 1rem auto;
 }
@@ -849,8 +843,6 @@ main {
     align-items: center;
     gap: 40px;
 }
-
-
 
 .sec7-img img{
     width: 300px;
@@ -1076,31 +1068,29 @@ footer .column2{
     /* Your tablet-specific styles go here */
     body{
         width: 100%;
-        border: 2px solid red;
-        
+        border: 2px solid red; 
     }
     .header-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin: 0.5rem auto;
         gap: 10px;
     }
    .logo{
-    display: flex;
-    flex-direction: column;
-   }
+       flex-direction: column;
+       display: flex;
+    }
     .search-bar{
-        width: 90%;
+        width: 100%;
         margin: 1rem auto;
     }
     .search-bar input{
-        height: 40px;
-        width: 90%;
-        padding: 30px 10px;   
-        margin: auto;
+        height: 55px;
+        width: 100%;
     }
     .search-bar input::placeholder{
-        font-size: 20px;
+        font-size: 25px;
     }
     .header-btns{
         display: none;
@@ -1108,17 +1098,14 @@ footer .column2{
     .navbar{
         display: none;
     }
-    .header-body{
-        /* border: 2px solid green; */
-    }
     .header-param p {
         width: 100%;
         font-size: 23px;
-        line-height: 24.59px;
+        line-height: 25px;
     }
     .buttons{
         width: 100%;
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
     .buttons button{
         font-size: 20px;
@@ -1158,7 +1145,7 @@ footer .column2{
         width: 100%;
     }
     .semi-container .section2-btns{
-        margin: 4rem auto 0;
+        margin: 7rem auto 0;
         width:80%;
         height: 90px;
         border-radius: 60px;
@@ -1166,7 +1153,7 @@ footer .column2{
         gap: 15px;
     }
     .section2-btns button{
-        font-size: 22px;
+        font-size: 25px;
     }
     .section2-btns #section2-btns1{
         width: 220px;
@@ -1180,16 +1167,15 @@ footer .column2{
         gap: 15px;
         border-radius: 60px;
     }
-
     .section2-param .btn{
         width: 300px;
         height: 50px;
         font-size: 20px;
     }
-
     .section2-param p{
         width: 100%;
-        font-size: 25px;
+        line-height: 30px;
+        font-size: 28px;
     }
     .section2-content{
         border: 2px solid orange;
@@ -1270,6 +1256,56 @@ footer .column2{
         width: 300px;
         height: 400px;
     }
+    #section7{
+        width: 100%;
+    }
+    #section7 .sec7-container{
+        gap: 10px;
+        width: 100%;
+    }
+    .sec7-item{
+        width: 100%;
+    }
+    .sec7-img img{
+        width: 100%;
+    }
+    .sec7-param{
+        width: 100%;
+    }
+    .footer-container{
+        width: 95%;
+        gap: 20px;
+    }
+    footer .column2{
+        width: 70%;
+    }
+    .row3-btn{
+        width: 350px;
+        gap: 10px;
+    }
+    .row3-btn input{
+        width: 180px;
+    }
+    .row3-btn input::placeholder{
+        font-size: 20px;
+    }
+    .column1 p{
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .column2 .row li{
+        font-size: 20px;
+    }
+    .row3 p{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .row3 h1{
+        font-size: 25px;
+    }
+    .row3-btn button{
+        font-size: 20px;
+    }
 }
 
 /* For phone screens */
@@ -1277,25 +1313,26 @@ footer .column2{
     /* Your phone-specific styles go here */
     body{
         width: 100%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
-
     .header-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin: 0.5rem auto;
         gap: 10px;
     }
    .logo{
        flex-direction: column;
        display: flex;
-   }
+    }
     .search-bar{
         width: 100%;
         margin: 1rem auto;
     }
     .search-bar input{
         height: 40px;
+        width: 100%;
     }
     .search-bar input::placeholder{
         font-size: 20px;
@@ -1343,51 +1380,47 @@ footer .column2{
     .section2-img .mv{
         display: block;
     }
+    .section2-img img{
+        width: 100%;
+    }
     #section2 .section2-container{
         flex-direction: column;
     }
-
     #section2 .section2-container2{
-        width: 100%;
+        width: 90%;
+        /* border: 2px solid red; */
         margin: auto;
     }
-
-    .semi-container{
-        flex-direction: column;
-    }
-
-    .semi-container .section2-btns{
-        margin-top: 15rem;
-    }
-
-    .section2-param{
-        width: 300px;
-        height: 50px;
-        font-size: 20px;
-    }
-
-    .section2-param p{
-        width: 100%;
-        font-size: 18px;
-    }
-
     .section2-content{
         flex-direction: column;
         position: relative;
         width: 100%;
-        justify-content: center;
-        border: 2px solid green;
+        margin: auto;
+        /* border: 2px solid green; */
     }
-
     .section2-container2 .content{
-        border: 2px solid red;
+        /* border: 2px solid yellow; */
         width: 340px;
     }
-
+    .semi-container{
+        flex-direction: column;
+    }
+    .semi-container .section2-btns{
+        margin-top: 15rem;
+        width: 100%;
+    }
+    .section2-param{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .section2-param p{
+        width: 100%;
+        font-size: 18px;
+    }
     .section2-divs .div1{
         display: none;
     }
-
     .section2-divs .div2{
         display: none;
     }    
@@ -1429,7 +1462,6 @@ footer .column2{
     .section3-details{
         flex-direction: column;
     }
-
     .section3-details-container{
         width: 100%;
     }
@@ -1444,12 +1476,10 @@ footer .column2{
         font-size: 25px; 
         line-height: 30px;   
     }
-    
     .sec3-page p{
         font-size: 20px;
         line-height: 25px;
     }
-
     .sec4-container img{
         height: 200px;
     }
@@ -1457,7 +1487,6 @@ footer .column2{
         font-size: 19px;
         line-height: 25px;
     }
-
     #section5{
         flex-direction: column;
     }
@@ -1525,6 +1554,9 @@ footer .column2{
         margin: 0;
         width: 80%;
         font-size: 18px;
+    }
+    .row3{
+        width: 100%;
     }
     .row1{
         margin-bottom: 2rem;
