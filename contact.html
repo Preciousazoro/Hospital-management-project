@@ -74,9 +74,9 @@
                 </div>
             </div>
 
-            <div class="col-2">
+            <!-- <div class="col-2">
                 <div class="contact-form">
-                    <form action="#">
+                    <form id="contactform" action="#" method="post">
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name" placeholder="Enter your First name">
                         
@@ -89,7 +89,35 @@
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
+
+            <div class="col-2">
+                <div class="contact-form">
+                  <form id="contactForm">
+                    <!-- First Name Input -->
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="Enter your First name" required>
+                    
+                    <!-- Email Input -->
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+                    
+                    <!-- Message Input -->
+                    <label for="message">Question / Feedback</label>
+                    <textarea id="message" name="feedback" rows="4" placeholder="Enter Your Question / Feedback" required></textarea>
+                    
+                    <!-- Hidden User Input -->
+                    <input type="hidden" id="user" name="user" value="your-username"> <!-- Replace "your-username" with your actual username -->
+              
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                  </form>
+              
+                  <!-- Success and Error Messages -->
+                  <div id="responseMessage" style="display:none;"></div>
+                </div>
+              </div>
+              
         </div>
     </section>
 
@@ -155,7 +183,7 @@
                 <div class="contactForm">
                     <h3>Need more Clarity?</h3>
                     <p>Send us a message to provide more clarity.</p>
-                    <form action="#">
+                    <form action="#" method="post">
                         <label for="message">Message / Feedback</label>
                         <input type="message" placeholder="Enter message / feedback" required>
                         <button type="submit">Send Message</button>
@@ -221,7 +249,7 @@
                 <div class="ft-logo">
                     <img src="./assets/images/FT-LOGO.png" alt="Logo">
                 </div>
-                <p id="detail">We are a dedicated team of healthcare professionals, technologists, and innovators committed to transforming the way healthcare is delivered. Our platform connects patients with certified doctors, specialists, and mental health professionals through secure and user-friendly virtual consultations. With a focus on patient-centric care, we strive to offer a seamless and efficient healthcare experience.</p>
+                <p id="paragraph">We are a dedicated team of healthcare professionals, technologists, and innovators committed to transforming the way healthcare is delivered. Our platform connects patients with certified doctors, specialists, and mental health professionals through secure and user-friendly virtual consultations. With a focus on patient-centric care, we strive to offer a seamless and efficient healthcare experience.</p>
                 <div class="icons">
                     <a href="#"><img src="./assets/images/Facebook.png" alt="" width="32px" height="28px"></a>
                     <a href="#"><img src="./assets/images/twitter.png" alt=""></a>
@@ -251,8 +279,10 @@
                 </div>
 
                 <div class="row3">
-                    <h1>Stay Connected Us</h1>
-                    <p>Subscribe to our Newsletter to get daily dose of health tips to keep you away from the doctors.</p>
+                    <div class="row3-details">
+                        <h1>Stay Connected Us</h1>
+                        <p>Subscribe to our Newsletter to get daily dose of health tips to keep you away from the doctors.</p>
+                    </div>
 
                     <div class="row3-container">
                         <div class="row3-btn">
@@ -280,5 +310,6 @@
             <p>Copy right 2024</p>
         </div>
     </footer>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

@@ -38,3 +38,18 @@
 // });
 
 // updateDots();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menu = document.getElementById('menubar');
+    const close = document.getElementById('close');
+    const navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', function() {
+        navbar.classList.add('show');
+    });
+
+    close.addEventListener('click', function() {
+        navbar.classList.remove('show');
+    });
+});

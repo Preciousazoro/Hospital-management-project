@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid green; */
 }
 
 body{
@@ -79,12 +80,19 @@ body{
 .navbar{
     justify-content: center;
 }
+#menubar{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+#close{
+    display: none;
+}
 
 .navbar .active{
     padding-bottom: 5px;
     border-bottom: 3px solid #60AEDA
 }
-
 
 nav ul {
     margin: 0 auto;
@@ -93,8 +101,8 @@ nav ul {
     display: flex;
     background-color: #E7F3FA;
     padding: 10px 20px;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: space-around;
+    /* gap: 20px; */
 }
 
 
@@ -117,8 +125,6 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration:solid;
 } 
-
-
 
 main {
     display: flex;
@@ -186,7 +192,6 @@ main {
 
 .buttons{
     width: 335px;
-    /* height: 60px; */
     border-radius: 80px;
     align-items: center;
     background-color: #E6EDEE;
@@ -195,7 +200,6 @@ main {
     display: flex;
     gap: 8px;
     display: flex;
-    /* padding: 10px; */
 }
 
 .buttons button {
@@ -221,7 +225,6 @@ main {
     margin: 2rem 0;
     padding-top: 2rem;
     color: #0D5F8E;
-    /* width: 90%; */
 }
 
 .section1{
@@ -600,12 +603,9 @@ main {
     display: flex;
     gap: 8px;
 }
-
 .detail-1-btns img{
     height: 10vh;
 }
-
-
 #section5 #detail-1-btns1{
     width: 121px;
     height: 40px;
@@ -616,7 +616,6 @@ main {
     cursor: pointer;
     background-color: #FAFCFE;
 }
-
 #section5 #detail-1-btns2{
     width: 170px;
     height: 40px;
@@ -627,18 +626,14 @@ main {
     border: none;
     cursor: pointer;
 }
-
-
 #section5 #detail-1-btns1:hover {
     background-color: #1286C8;
     color: #F4F5F6;
 }
-
 #section5 #detail-1-btns2:hover {
     background-color: #FFFFFF;
     color: #1286C8;
 } 
-
 .detail-2-h1 h1{
     font-size: 29px;
     color: #0D5F8E;
@@ -831,7 +826,6 @@ main {
 }
 
 #section7{
-    border: 2px solid red;
     width: 90%;
     margin: 1rem auto;
 }
@@ -1056,19 +1050,12 @@ footer .column2{
 }
 
 
-
-/* For desktop screens */
-@media only screen and (min-width: 1024px) {
-    /* Your desktop-specific styles go here */
-
-}
-
 /* For tablet screens */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Your tablet-specific styles go here */
     body{
         width: 100%;
-        border: 2px solid red; 
+        /* border: 2px solid red;  */
     }
     .header-container{
         display: flex;
@@ -1078,9 +1065,20 @@ footer .column2{
         gap: 10px;
     }
    .logo{
-       flex-direction: column;
-       display: flex;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;       
     }
+    #menubar{
+        display: block;
+    }
+    #close{
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #close p{}
+    
     .search-bar{
         width: 100%;
         margin: 1rem auto;
@@ -1088,6 +1086,7 @@ footer .column2{
     .search-bar input{
         height: 55px;
         width: 100%;
+        border-radius: 30px;
     }
     .search-bar input::placeholder{
         font-size: 25px;
@@ -1098,6 +1097,22 @@ footer .column2{
     .navbar{
         display: none;
     }
+    .navbar.show{
+        display: block;
+    }
+    .navbar ul{
+        position: absolute;
+        gap: 5px;   
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;                                
+    }    
+    nav ul li {
+        justify-content: center;
+        font-size: 25px;
+    } 
     .header-param p {
         width: 100%;
         font-size: 23px;
@@ -1178,7 +1193,6 @@ footer .column2{
         font-size: 28px;
     }
     .section2-content{
-        border: 2px solid orange;
         position: relative;
         width: 96%;
         margin-top: auto;
@@ -1191,9 +1205,8 @@ footer .column2{
         display: none;
     }
     .content{
-        border: 2px solid blue;
         width: 33%;
-        height: 50vh;
+        height: 60vh;
     }
     .content-img{
         width: 100%;
@@ -1206,16 +1219,21 @@ footer .column2{
     }
     .content-details{
         width: 100%;
+        padding-bottom: 10px;
     }
     .content-details h3{
-        padding: 1rem 0;
+        padding: 1rem 2px;
+        font-size: 25px;
+        width: 90%;
     }
     .content-details p{
-        font-size: 18px;
+        font-size: 22px;
+        padding: 2px;
     }
     .content-details button{
-        width: 100%;
-        border: 2px solid red;
+        width: 90%;
+        font-size: 18px;
+        margin: auto;
     }
     .sect3-title span{
         font-size: 35px;
@@ -1233,17 +1251,20 @@ footer .column2{
     }
     .sec3-page p{
         font-size: 25px;
-        line-height: 27px;
+        line-height: 30px;
     }
     .sec3-page button{
-        font-size: 21px;
+        font-size: 22px;
+    }
+    #section4 .sec4-h1 h1{
+        font-size: 30px;
     }
     .sec4-container h2{
         font-size: 35px;
     }
     .sec4-container p{
-        font-size: 25px;
-        line-height: 25px;
+        font-size: 27px;
+        line-height: 30px;
     }
     .detail-1-container h1{
         font-size: 30px;
@@ -1252,16 +1273,56 @@ footer .column2{
         font-size: 25px;
         line-height: 25px;
     }
+    #section5{
+        display: flex;
+        flex-direction: column;
+    }
     #section5 .sec5-img img{
-        width: 300px;
-        height: 400px;
+        width: 100%;
+        height: 600px;
+    }
+    .sec5-details{
+        display: flex;
+        gap: 20px;
+    }
+    .detail-1{
+        width: 50%;
+    }
+    .detail-1-container h1{
+        font-size: 29px;
+    }
+    .detail-1-container p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .detail-1-btns button{
+            font-size: 20px;
+    }
+    .detail-1-btns img{
+        height: 8vh;
+    }
+    .detail-2{
+        width: 50%;
+    }
+    .detail-2-item {
+        margin-bottom: 1rem;
+    }
+    .detail-2-item p{
+        padding: 10px 0;
+        font-size: 25px;
     }
     #section7{
         width: 100%;
     }
+    .section-title h1{
+        font-size: 30px;
+        width: 90%;
+        margin: auto;
+    }
     #section7 .sec7-container{
         gap: 10px;
-        width: 100%;
+        margin: auto;
+        width: 95%;
     }
     .sec7-item{
         width: 100%;
@@ -1271,6 +1332,17 @@ footer .column2{
     }
     .sec7-param{
         width: 100%;
+    }
+    .sec7-param h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .sec7-param p{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .sec7-param button{
+        font-size: 20px;
     }
     .footer-container{
         width: 95%;
@@ -1284,14 +1356,17 @@ footer .column2{
         gap: 10px;
     }
     .row3-btn input{
-        width: 180px;
+        width: 49%;
+    }
+    .row3-btn button{
+        font-size: 20px;
+        width: 49%;
     }
     .row3-btn input::placeholder{
         font-size: 20px;
     }
-    .column1 p{
-        font-size: 100px;
-        font-weight: 700;
+    .column2 .row ul{
+        width: 100%;
     }
     .column2 .row li{
         font-size: 20px;
@@ -1299,13 +1374,12 @@ footer .column2{
     .row3 p{
         font-size: 25px;
         line-height: 25px;
+        width: 100%;
     }
     .row3 h1{
         font-size: 25px;
     }
-    .row3-btn button{
-        font-size: 20px;
-    }
+    
 }
 
 /* For phone screens */
@@ -1322,9 +1396,13 @@ footer .column2{
         margin: 0.5rem auto;
         gap: 10px;
     }
-   .logo{
-       flex-direction: column;
-       display: flex;
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;       
+    }
+    #menubar{
+        display: block;
     }
     .search-bar{
         width: 100%;
@@ -1552,7 +1630,7 @@ footer .column2{
         list-style: circle;
         list-style-position: inside;
         margin: 0;
-        width: 80%;
+        width: 90%;
         font-size: 18px;
     }
     .row3{
@@ -1566,19 +1644,26 @@ footer .column2{
     }
     .row3-container{
         flex-direction: column;
+        width: 100%;
     }
     .row3-btn{
-        width: 90%;
+        width: 100%;
+        display: flex;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
         margin: 2rem auto;
     }
     .row3-btn input{
-        width: 150px;
+        width: 55%;
     }
     .row3-btn input::placeholder{
-        font-size: 16px;
+        font-size: 17px;
     }
     .row3-btn button{
         font-size: 17px;
+        width: 40%;
     }
     .help{
         display: none;

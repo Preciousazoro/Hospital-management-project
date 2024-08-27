@@ -153,7 +153,6 @@ nav ul li a:hover {
 .sec2-container{
     display: flex;
     /* gap: 40px; */
-    /* border: 2px solid green; */
     background-color: #107AB6;
     color: #92C7E6;
 }
@@ -671,8 +670,302 @@ footer .column2{
 @media  screen and (min-width: 768px) and (max-width: 1023px) {
     /* Your tablet-specific styles go here */
     body {
+        /* background-color: lightgreen; */
+        width: 100%;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0.5rem auto;
+        gap: 10px;
+    }
+   .logo{
+       flex-direction: column;
+       display: flex;
+    }
+    .search-bar{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .search-bar input{
+        height: 55px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .search-bar input::placeholder{
+        font-size: 25px;
+    }
+    .header-btns{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .sec1-container{
+        width: 90%;
+    }
+    .sec1-details{
+        gap: 20px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .col{
+        width: 300px;
+        height: 420px;
+    }
+    .col h3{
+        font-size: 30px;
+        color: #0D5F8E;
+        /* text-align: center; */
+    }
+    
+    .col p{
+        line-height: 30px;
+        font-size: 25px;
+        /* text-align: center; */
+    }
+    #section2{
+        width: 95%;
+    }
+    .sec2-container{
+       flex-direction: column;
+    }
+    .sec2-col1{
+        width: 100%;
+        padding: 2rem;
+    }
+    .col1-row1{
+        width: 100%;
+    }
+    .col1-row1 h1{
+        font-size: 40px;
+    }
+    .col1-row1 p{
+        font-size: 25px;
+        line-height: 30px;
+        width: 100%;
+    }
+    .col1-row2 span{
+        font-size: 25px;
+    }
+    .col1-row2 p{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .col1-list li{
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 30px;
+    } 
+    .sec2-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        height: 80px;
+    }
+    .sec2-btns button{
+        font-size: 22px;
+    }
+    #sec2-btn1{
+        width: 2000px;
+        height: 60px;
+    }
+    #sec2-btn2{
+        width: 2300px;
+        height: 60px;
+    }
+    .sec2-col2{
+        padding:2rem 0;
+        width: 80%;
+        margin: auto;
+    }
+    .sec2-col2 img{
+        width: 100%;
+        height: 680px;
+        border-radius: 10px;
+    }
+    .sec3-container h1{
+        font-size: 35px;
+    }
+    .sec3-container p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #section4{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sec4-container h2{
+        color: #0D5F8E; 
+        font-size: 35px;
+        margin: 1rem 0;
+    }
+    .sec4-container p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .sec4-container li{
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .sec4-container span{
+        font-size: 25px;
+    }   
+    .sec4-btns{
+        width: 100%;
+        display: flex;
+        height: 65%;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec4-btns button{
+        font-size: 25px;
+    }
+    #sec4-btn1{
+        width: 49%;
+        height: 60px;
+    }
+    #sec4-btn2{
+        width: 49%;
+        height: 60px;
+        gap: 10px;
+    }
+    .sec4-img{
+        display: flex;
+    }
+    .sec4-img img{
+        width: 80%;
+        height: 80%;
+    }
+    .sec5-container{
+        width: 90%;
+        height: 400px;
+    }
+    .sec5-details{
+        padding: 2rem;
+        width: 500px;
+    }
+    .sec5-details h1{
+        font-size: 30px;
+    }
+    .sec5-details p{
+        margin-top: 1rem;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sec2-btns{
+        width: 100%;
+        margin: 1rem 0;
+        display: flex;
+        gap: 5px;
+    }
+    .section6-details{
+    gap: 20px;
+}
+.sect6-title span{
+    font-size: 35px;
+    font-weight: 700;
+}
+.sect6-title p{
+    line-height: 40px;
+    font-size: 25px;
+}
+.section6-details-container{
+    width: 350px;
+}
+
+.sect6-title{
+    margin: 2rem 0;
+}
+
+.sect6-param{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+    
 
 
+
+
+    #section7{
+        width: 100%;
+    }
+    .section-title h1{
+        font-size: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    #section7 .sec7-container{
+        gap: 10px;
+        margin: auto;
+        width: 95%;
+    }
+    .sec7-item{
+        width: 100%;
+    }
+    .sec7-img img{
+        width: 100%;
+    }
+    .sec7-param{
+        width: 100%;
+    }
+    .sec7-param h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .sec7-param p{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .sec7-param button{
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 2rem;
+    }
+    .footer-container{
+        width: 95%;
+        gap: 20px;
+        padding-top: 1rem;
+    }
+    footer .column2{
+        width: 70%;
+    }
+    .row3-btn{
+        width: 350px;
+        gap: 10px;
+    }
+    .row3-btn input{
+        width: 180px;
+    }
+    .row3-btn input::placeholder{
+        font-size: 20px;
+    }
+    .column2 .row ul{
+        width: 100%;
+    }
+    .column2 .row li{
+        font-size: 20px;
+    }
+    .row3-details{
+        margin-bottom: 1.5rem;
+    }
+    .row3 p{
+        font-size: 25px;
+        line-height: 25px;
+        width: 100%;
+    }
+    .row3 h1{
+        font-size: 25px;
+    }
+    .row3-btn button{
+        font-size: 20px;
     }
 }
 
@@ -744,7 +1037,6 @@ footer .column2{
     .sec5-details .sec2-btns{
         width: 100%;
         padding-left: 0.5rem;
-        /* margin-bottom: rem; */
     }
     #sec2-btn1{
         width: 160px;
@@ -919,7 +1211,7 @@ footer .column2{
         list-style: circle;
         list-style-position: inside;
         margin: 0;
-        width: 80%;
+        width: 90%;
         font-size: 18px;
     }
     .row1{
@@ -932,20 +1224,27 @@ footer .column2{
         font-size: 17px;
     }
     .row3-container{
+        width: 100%;
         flex-direction: column;
     }
     .row3-btn{
-        width: 90%;
-        margin:2rem auto;
+        width: 100%;
+        display: flex;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: 2rem auto;
     }
     .row3-btn input{
-        width: 150px;
+        width: 55%;
     }
     .row3-btn input::placeholder{
-        font-size: 16px;
+        font-size: 17px;
     }
     .row3-btn button{
         font-size: 17px;
+        width: 40%;
     }
     .help{
         display: none;

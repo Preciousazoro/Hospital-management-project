@@ -174,27 +174,25 @@ nav ul li a:hover {
 }
 
 .add img{
-    /* border: 2px solid orange; */
     width: 30px;
     height: 30px;
-    /* align-content: center; */
 }
 
 .add p{
-    /* border: 2px solid orangered; */
     color: #EBF7FA;
 }
 
 .col-2{
-    /* border: 2px solid black; */
     width: 500px;
+}
+.contact-form{
+    width: 100%;
 }
 
 .contact-form form{
     display: flex;
     flex-direction: column;
     margin: 2rem;
-    /* border: 2px solid green; */
     background-color: #FFFFFF;
     padding: 2rem;
     border-radius: 10px;
@@ -254,9 +252,7 @@ textarea {
 }
 
 .sec3-row{
-    /* border: 2px solid black; */
     margin: 20px 0;
-    
 }
 
 .sec3-row-container{
@@ -272,7 +268,6 @@ textarea {
     display: flex;
     gap: 10px;
     border-bottom: 1px solid #CBD0D7;
-
 }
 
 .sec3-conc p{
@@ -289,14 +284,12 @@ textarea {
 }
 
 .sec3-col1{
-    /* border: 2px solid blue; */
     background-color: #E7F3FA;
     width: 500px;
     padding: 1rem;
 }
 
 .sec3-col1 h3{
-    /* border: 2px solid green; */
     color: #3C4047;
     font-size: 17px;
     padding: 1rem 0 0 4rem;
@@ -419,7 +412,6 @@ textarea {
     height: 35px;
     align-content: center;
     cursor: pointer;
-    
 }
 
 
@@ -654,26 +646,247 @@ footer .column2{
 }
 
 
-
-
-
-
-/* For desktop screens */
-@media only screen and (min-width: 1024px) {
-    /* Your desktop-specific styles go here */
-    body {
-        /* background-color: lightblue; */
-
-    }
-}
-
 /* For tablet screens */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Your tablet-specific styles go here */
     body {
         /* background-color: lightgreen; */
-
-
+        width: 100%;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0.5rem auto;
+        gap: 10px;
+    }
+   .logo{
+       flex-direction: column;
+       display: flex;
+    }
+    .search-bar{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .search-bar input{
+        height: 55px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .search-bar input::placeholder{
+        font-size: 25px;
+    }
+    .header-btns{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    #section1 .title h1{
+        font-size: 35px;
+    }
+    #section1 .title p{
+        font-size: 25px;
+    }
+    #section2{
+        padding: 2rem 0;
+        width: 95%;
+    }
+    .sec2-container{
+        width: 95%;
+        gap: 15px;
+    }
+    .col-1{
+        width: 410px;
+    }
+    .col-1 h4{
+        font-size: 28px;
+    }
+    .col-1 span{
+        font-size: 32px;
+    }
+    .col-1 p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .address .add{
+        height: 50px;
+    }
+    .add p{
+        width: 100%;
+        font-size: 22px;
+    }
+    .col-2{
+        width: 70%;
+    }
+    .contact-form{
+        width: 100%;
+        margin: auto;
+    }
+    .contact-form form{
+        width: 90%;
+        margin: 2rem auto;
+        box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form form button{
+        height: 50px;
+        font-size: 20px;
+    }
+    .contact-form form input{
+        padding: 20px;
+    }
+    .contact-form label{
+        font-size: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+    }
+    .sec3-conatiner{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sec3-row h4{
+        font-size: 20px;
+    }
+    .sec3-row h1{
+        font-size: 30px;
+    }
+    .sec3-row p{
+        font-size: 25px;
+        width: 100%;
+        line-height: 28px;
+    }
+    .sec3-columns{
+        width: 100%;
+    }
+    .sec3-col1{
+        width: 100%;
+    }
+    .sec3-col1 h3{
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+    }
+    .sec3-col1 p{
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .sec3-col2{
+        width: 100%;
+    }
+    .sec3-list{
+        width: 100%;
+    }
+    .sec3-conc p{
+        padding: 18px 10px 10px;
+        width: 100%;
+        font-size: 25px;
+    }
+    .sec3-conc img{
+        width: 40px;
+        height: 40px;
+    }
+    .contactForm{
+        width: 80%;
+    }
+    .contactForm h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contactForm p{
+        font-size: 27px;
+    }
+    .contactForm label{
+        font-size: 23px;
+    }
+    .contactForm form input{
+        border-radius: 10px;
+        height: 50px;
+        padding: 20px;
+    }
+    .contactForm input::placeholder{
+        font-size: 20px;
+    }
+    .sec3-col2 button{
+        height: 50px;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+    #section7{
+        width: 100%;
+    }
+    .section-title h1{
+        font-size: 30px;
+        width: 90%;
+        margin: auto;
+    }
+    #section7 .sec7-container{
+        gap: 10px;
+        margin: auto;
+        width: 95%;
+    }
+    .sec7-item{
+        width: 100%;
+    }
+    .sec7-img img{
+        width: 100%;
+    }
+    .sec7-param{
+        width: 100%;
+    }
+    .sec7-param h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .sec7-param p{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .sec7-param button{
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 2rem;
+    }
+    .footer-container{
+        width: 95%;
+        gap: 20px;
+        padding-top: 1rem;
+    }
+    footer .column2{
+        width: 70%;
+    }
+    .row3-btn{
+        width: 350px;
+        gap: 10px;
+    }
+    .row3-btn input{
+        width: 180px;
+    }
+    .row3-btn input::placeholder{
+        font-size: 20px;
+    }
+    .column2 .row ul{
+        width: 100%;
+    }
+    .column2 .row li{
+        font-size: 20px;
+    }
+    .row3-details{
+        margin-bottom: 1.5rem;
+    }
+    .row3 p{
+        font-size: 25px;
+        line-height: 25px;
+        width: 100%;
+    }
+    .row3 h1{
+        font-size: 25px;
+    }
+    .row3-btn button{
+        font-size: 20px;
     }
 }
 
@@ -805,8 +1018,7 @@ footer .column2{
     }
     .sec3-conc p{
         font-size: 18px;
-    }
-    
+    }   
     .sec3-conc img{
         width: 20px;
         height: 20px;
@@ -857,8 +1069,11 @@ footer .column2{
         list-style: circle;
         list-style-position: inside;
         margin: 0;
-        width: 80%;
+        width: 90%;
         font-size: 18px;
+    }
+    .row3{
+        width: 100%;
     }
     .row1{
         margin-bottom: 2rem;
@@ -868,19 +1083,26 @@ footer .column2{
     }
     .row3-container{
         flex-direction: column;
+        width: 100%;
     }
     .row3-btn{
-        width: 90%;
+        width: 100%;
+        display: flex;
+        padding: 2px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
         margin: 2rem auto;
     }
     .row3-btn input{
-        width: 150px;
+        width: 55%;
     }
     .row3-btn input::placeholder{
-        font-size: 16px;
+        font-size: 17px;
     }
     .row3-btn button{
         font-size: 17px;
+        width: 40%;
     }
     .help{
         display: none;
