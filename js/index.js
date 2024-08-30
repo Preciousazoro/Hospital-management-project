@@ -53,3 +53,30 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.remove('show');
     });
 });
+
+
+// all about Health Article 
+// function swapLeft() {
+//     const articles = document.querySelector('.articles');
+//     const contentItems = Array.from(articles.children);
+//     articles.appendChild(contentItems[0]);
+// }
+
+// function swapRight() {
+//     const articles = document.querySelector('.articles');
+//     const contentItems = Array.from(articles.children);
+//     articles.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
+// }
+
+
+function swapLeft() {
+    const sec7Container = document.querySelector('.sec7Container');
+    const contentItems = Array.from(sec7Container.children);
+    sec7Container.appendChild(contentItems[0]);
+}
+
+function swapRight() {
+    const sec7Container = document.querySelector('.sec7Container');
+    const contentItems = Array.from(sec7Container.children);
+    sec7Container.insertBefore(contentItems[contentItems.length - 1], contentItems[0]);
+}

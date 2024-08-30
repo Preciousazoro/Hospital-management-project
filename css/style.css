@@ -727,16 +727,20 @@ main {
 }
 
 .reviews {
+    /* border: 2px solid green; */
     display: flex;
     gap: 20px;
     overflow: hidden;
     justify-content: center;
     margin: 20px 0;
+    width: 100%;
 }
 
 .review-card {
+    /* border: 2px solid red; */
+    width: 33%;
     max-width: 400px;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     padding: 15x;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -811,7 +815,7 @@ main {
     cursor: pointer;
 }
 .fade{
-    opacity: 0.3;
+    opacity: 0.4;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -830,8 +834,7 @@ main {
     margin: 1rem auto;
 }
 
-#section7 .sec7-container{
-    /* border: 2px solid black; */
+#section7 .sec7Container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -839,7 +842,7 @@ main {
 }
 
 .sec7-img img{
-    width: 300px;
+    width: 100%;
     height: 200px;
 }
 
@@ -847,6 +850,7 @@ main {
     font-size: 20px;
     color: #3C4047;
     margin: 1rem 0;
+
 }
 
 .sec7-param button{
@@ -883,6 +887,8 @@ main {
     width: 40px;
     height: 40px;
 }
+
+
 
 footer{
     background-color: #107AB6;
@@ -1118,6 +1124,15 @@ footer .column2{
         font-size: 23px;
         line-height: 25px;
     }
+    .header-h1 img{
+        display: block;
+    }
+    .header-h1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+    }
     .buttons{
         width: 100%;
         margin-top: 5rem;
@@ -1311,7 +1326,45 @@ footer .column2{
         padding: 10px 0;
         font-size: 25px;
     }
+    #section6 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .review-header .barg p{
+        font-size: 12px;
+    }
+    .review-header h1 {
+        font-size: 24px;
+    }
+    .review-details{
+        gap: 20px;
+    }
+    .review-header p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .reviews {
+        width: 100%;
+    }
+    .review-card {
+        width: 33%;
+        padding: 15px;
+    }
+    .review-card h3 {
+        margin: 10px 0 5px 0;
+    }
+    .review-card p{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px;
+    }
     #section7{
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 100%;
     }
     .section-title h1{
@@ -1320,6 +1373,8 @@ footer .column2{
         margin: auto;
     }
     #section7 .sec7-container{
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         margin: auto;
         width: 95%;
@@ -1447,6 +1502,7 @@ footer .column2{
     #section2{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .section2 .row{
         display: flex;
@@ -1477,14 +1533,14 @@ footer .column2{
         /* border: 2px solid green; */
     }
     .section2-container2 .content{
-        /* border: 2px solid yellow; */
         width: 340px;
+        height: 450px;
     }
     .semi-container{
         flex-direction: column;
     }
     .semi-container .section2-btns{
-        margin-top: 15rem;
+        margin-top: 12rem;
         width: 100%;
     }
     .section2-param{
@@ -1494,7 +1550,7 @@ footer .column2{
     }
     .section2-param p{
         width: 100%;
-        font-size: 18px;
+        font-size: 14px;
     }
     .section2-divs .div1{
         display: none;
@@ -1503,39 +1559,70 @@ footer .column2{
         display: none;
     }    
     .content-img{
+        display: flex;
+        justify-content: center;
         width: 100%;
+        align-items: center;
+    }
+    .content-img img{
+        width: 140px;
+        height: 140px;
+        /* margin-top: 15px; */
     }
     .content-details{
         width: 100%;
+        padding-bottom: 1rem;
+    }
+    .content-details p{
+        font-size: 16px;
+    }
+    .content-details button{
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        font-size: 17px;
+    }
+    main{
+        width: 100%;
     }
     .header-h1 img{
+        margin-top: 1rem;
         display: block;
+        width: 100%;
+
     }
     .header-h1{
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* gap: 10px; */
     }
     .header-h1 h1{
-        width: 100%;
+        width: 80%;
+        margin:  auto;
         text-align: center;
         font-size: 25px;
-        line-height: 25px;
+        line-height: 35px;
     }
     .header-body{
         flex-direction: column;
+        width: 100%;
     }
     .header-param{
         margin: 2rem 0;
         width: 100%;
     }
     .header-param p{
-        width: 170%;
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
         text-align: center;
     }
     .buttons{
-        margin-top: 5rem;
+        width: 90%;
+        margin: auto;
+    }
+    .section-title{
+       text-align: center;
     }
     .section3-details{
         flex-direction: column;
@@ -1545,14 +1632,14 @@ footer .column2{
     }
     .sect3-title p{
         line-height: 30px;
-        font-size: 22px;
+        font-size: 25px;
     }
     .sect3-param{
-        font-size: 20px;
+        font-size: 15px;
     }
     .sec3-page h1{
-        font-size: 25px; 
-        line-height: 30px;   
+        font-size: 35px; 
+        line-height: 40px;   
     }
     .sec3-page p{
         font-size: 20px;
@@ -1567,9 +1654,15 @@ footer .column2{
     }
     #section5{
         flex-direction: column;
+        position: relative;
+        margin-bottom: 5rem;
+        overflow: hidden;
     }
     .sec5-details{
         flex-direction: column;
+    }
+    .detail-1{
+        padding-bottom: 3rem;
     }
     .detail-1-container p{
         font-size: 19px;
@@ -1581,6 +1674,7 @@ footer .column2{
     .detail-2{
         display: flex;
         flex-direction: column;
+        margin-top: 3rem;
     }
     .detail-2-item p{
         font-size: 17px;
@@ -1589,10 +1683,71 @@ footer .column2{
         width: 100%;
         height: 400px;
     }
-    #section7{
+    #section6 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180vh;
+        overflow: hidden;
+
+    }
+    .review-header{
+        width: 100%;
+        flex-direction: column;
+    }
+    .review-header .title{
+        width: 100%;
+    }
+    .review-header .barg p{
+        font-size: 12px;
+    }
+    
+    .review-header h1 {
+        margin: 5px;
+        font-size: 24px;
+        color: #0D5F8E;
         width: 90%;
     }
-    .sec7-container{
+    .review-header p {
+        font-size: 16px;
+        color: #666;
+        line-height: 20px;
+        margin: 5px;
+    }
+    .reviews {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    .review-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 15x;
+    }
+    .review-img {
+        width: 100px;
+        height: 100px;
+    }
+    .review-card h3 {
+        margin: 10px 0 5px 0;
+    }
+    .review-card h4 {
+        margin: 5px 0 15px 0;
+    }
+    
+    .review-card p{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px;
+    }
+    #section7{
+        position: relative;
+        width: 90%;
+        /* margin-top: 5rem; */
+    }
+    .sec7Container{
         flex-direction: column;
     }
     .sec7-img img{
