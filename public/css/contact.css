@@ -206,7 +206,7 @@ nav ul li a:hover {
 }
 
 .col-2{
-    width: 500px;
+    width: 50%;
 }
 .contact-form{
     width: 100%;
@@ -294,9 +294,8 @@ textarea {
 }
 
 .sec3-conc p{
-    /* align-content: center; */
-    padding: 15px 10px;
-    /* border: 2px solid blue; */
+    align-content: center;
+    padding: 10px;
 }
 
 .sec3-conc img{
@@ -382,7 +381,6 @@ textarea {
 }
 
 .sec3-col2{
-    /* border: 2px solid red; */
     width: 500px;
     align-content: center;
 }
