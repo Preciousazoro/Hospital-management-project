@@ -8,23 +8,26 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.get('/', (req, res) => {
    let page = 'home'
     let css = "/css/style.css";
-    res.render('index', {title: 'PRO-HEALTH', css, page})
+    let js = "/js/index.js";
+    res.render('index', {title: 'PRO-HEALTH', css, js, page})
 })
 app.get('/contact', (req, res) => {
     let page = 'contact';
     let css = "/css/contact.css";
-    res.render('contact', {title: "Contact Us", css, page});
+    let js = "/js/contact.js";
+    res.render('contact', {title: "Contact Us", css, js, page});
  });
 
  app.get('/services', (req, res) => {
    let page = 'services'
     let css = "/css/services.css";
-    res.render('services', {title: "Our Services", css, page});
+    let js = "/js/services.js";
+    res.render('services', {title: "Our Services", css, js, page});
  })
 
-//  app.all('*', (req, res) => {
-//     res.render('error', {title: "404 Page"});
-//  })
+ app.all('*', (req, res) => {
+    res.render('error', {title: "404 Page"});
+ })
 
 
 
