@@ -1442,6 +1442,7 @@ footer .column2 {
     .sec7-param button {
         font-size: 20px;
     }
+
     .footer-container {
         width: 95%;
         gap: 20px;
@@ -1507,6 +1508,13 @@ footer .column2 {
         display: block;
     }
 
+    #close {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+
     .search-bar {
         width: 100%;
         margin: 1rem auto;
@@ -1529,7 +1537,7 @@ footer .column2 {
         position: absolute;
         top: -10px;
         width: 100%;
-        height: 100vh;
+        height: 100vh important;
         display: none;
         margin: 0;
         padding: 0;
@@ -1958,7 +1966,9 @@ footer .column2 {
     .sec7-param P {
         font-size: 20px;
     }
-
+    .arr-btns{
+        display: none;
+    }
     .footer-container {
         flex-direction: column;
     }

@@ -607,6 +607,10 @@ footer .column2 {
     cursor: pointer;
 }
 
+input[type="text"]{
+    margin-bottom: 0;
+}
+
 .row3-btn input::placeholder {
     padding-left: 15px;
 }
@@ -944,6 +948,9 @@ footer .column2 {
     .row3-btn input::placeholder{
         font-size: 20px;
     }
+    input[type="text"]{
+        margin-bottom: 0;
+    }
     .column2 .row ul{
         width: 100%;
     }
@@ -1157,6 +1164,9 @@ footer .column2 {
     }
     .sec7-img img{
         width: 100%;
+    }
+    .arr-btns{
+        display: none;
     }
     .footer-container{
         flex-direction: column;
